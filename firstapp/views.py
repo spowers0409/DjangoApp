@@ -10,5 +10,8 @@ from django.http import HttpResponse
 
 # Here we are using a new function called render which takes the request from the browser
 # as well as atemplate and 'renders' the HTML to the browser
-def hello(request):
-    return render(request, 'firstapp/hello.html')
+# def hello(request):
+#     return render(request, 'firstapp/hello.html')
+
+def index(request):
+    return render(request, 'inventory/index.html')

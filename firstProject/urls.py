@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # This line of code says for any url requested (except admin) include the file
     # firstapp.urls to find the specific action to take based on the endpoints requested
-    path('', include('firstapp.urls')),
+    path('', include('inventory.urls'))
 ]
